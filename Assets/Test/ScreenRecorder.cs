@@ -37,7 +37,7 @@ public class ScreenRecorder : MonoBehaviour
                 if (frameCount > 0)
                 {
                     var name = "Capture/frame" + frameCount.ToString ("0000") + ".png";
-                    Application.CaptureScreenshot (name, superSize);
+                    ScreenCapture.CaptureScreenshot (name, superSize);
                 }
 
                 frameCount++;
